@@ -20,11 +20,10 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/screely-1.png)
-![](./images/screely-2.png)
 
 ### Links
 
-- Live Site URL: [Live Site](https://fm-single-price-grid-component-gonzalo-gauna.netlify.app/)
+- Live Site URL: [Live Site](https://frontend-mentor-profile-card-component-gonzalo-gauna.netlify.app/)
 
 ## My process
 
