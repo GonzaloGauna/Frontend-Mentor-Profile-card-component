@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+    font-family: 'Rubik', sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h1, p, div, input, button {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkCyan);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -55rem left -75rem, bottom -55rem right -75rem;
+}
+
+:root {
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkBlue: hsl(229, 23%, 23%);
+    --darkBlue: hsl(227, 10%, 46%);
+    --darkGray: hsl(0, 0%, 59%);
+    --softGray: hsla(0, 6%, 84%, 0.527);
+    --white: #fff;
+}
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.card {
+    width: 35rem;
+    height: 40rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card__user {
+    position: absolute;
+    top: 9rem;
+    left: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card__user-avatar {
+    width: 10rem;
+    height: 10rem;
+    border: 5px solid var(--white);
+    border-radius: 50%;
+}
+.card__user-info {
+    color: var(--veryDarkBlue);
+    font-weight: 500;
+    margin: 2.5rem 0 1.5rem 0;
+}
+.card__user-info span {
+    margin-left: 5px;
+    color: var(--darkBlue);
+}
+.card__user-contry {
+    font-size: 1.4rem;
+    color: var(--darkBlue);
+}
+.card__block-1 {
+    width: 100%;
+    height: 14rem;
+    background-image: url(../images/bg-pattern-card.svg);
+}
+.card__block-2 {
+    width: 100%;
+    height: 16rem;
+    background-color: var(--white);
+}
+.card__block-3 {
+    width: 100%;
+    height: 10rem;
+    background-color: var(--white);
+    border-top: 1px solid var(--softGray);
+}
+.stats {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.stats__items-number {
+    color: var(--veryDarkBlue);
+    font-weight: 500;
+    text-align: center;
+}
+.stats__items-item {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--darkBlue);
+    margin-top: 1rem;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+@media (min-width:  600px) {
+    body {
+        background-position: top -55rem left -10rem, bottom -55rem right -10rem;
+    }
+}
